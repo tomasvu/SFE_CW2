@@ -23,5 +23,5 @@ def home(request):
     return render(request, 'website/home.html', context)
 
 
-def about(request):
-    return render(request, 'website/about.html', {'title': 'About'})
+def rules(request):
+    return render(request, 'website/rules.html', {'title': 'Rules'})
