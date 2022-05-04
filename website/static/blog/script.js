@@ -1,9 +1,9 @@
 const questions = [
-    ["What are the three main parts of an essay?", "Introduction, main body and conclusion"],
-    ["What should be included in the introduction?", "Topic, background and plan"],
+    ["What are the three main parts of an essay?", "Introduction, main body and conclusion."],
+    ["What should be included in the introduction?", "Topic, background and plan."],
     ["How should the main body of the essay be written?", "Providing clear and focused sentences and using ideas from literature to support your main points."],
     ["What should the conclusion include?", "Include the most relevant and important issues concerning the topic."],
-    ["Before starting the essay, you should make sure that?", "You have fully understood the question and have sufficient research for the essay"]]
+    ["Before starting the essay, you should make sure that?", "You have fully understood the question and have sufficient research for the essay."]]
 
 function addFlashCardDiv(text) {
     const article = document.getElementById("flashcard-article");
@@ -11,27 +11,47 @@ function addFlashCardDiv(text) {
     const column_div = document.createElement("div");
     const master_div = document.createElement("div");
     const body_div = document.createElement("div");
-    const display_question = document.createElement("h5");
+    const content_div = document.createElement("div");
+    const answer_div = document.createElement("div");
+    const content_question = document.createElement("h5");
+    const answer_question = document.createElement("h5");
     const header = document.createElement("hr");
     const display_answer = document.createElement("p");
 
-    master_div.className = "card";
-    master_div.style.width = "18rem";
-    master_div.style.height = "210px";
-    master_div.onclick = function () {display_answer.hidden = display_answer.hidden === false;};
-    body_div.className = "card-body";
-    display_question.className = "card-title";
-    display_question.className = "card-text";
-    display_answer.hidden = true;
+    master_div.className = "flashcard";
+    body_div.className = "flashcard-inner";
+    content_question.className = "card-title";
+    content_question.style.textAlign = "center";
+    content_question.style.color = "white";
+    content_question.style.paddingRight = "5px";
+    content_question.style.paddingLeft = "5px";
+    answer_question.className = "card-title";
+    answer_question.style.textAlign = "center";
+    answer_question.style.color = "white";
+    answer_question.style.paddingLeft = "5px";
+    answer_question.style.paddingRight = "2.5px";
+    display_answer.style.paddingRight = "5px";
+    display_answer.style.paddingLeft = "2.5px";
+    display_answer.className = "card-text";
+    display_answer.style.textAlign = "center";
     column_div.className = "col-sm-6 center-block";
     column_div.style.paddingBottom = "12.5px";
     column_div.style.paddingTop = "12.5px";
+    content_div.className = "flashcard-front";
+    answer_div.className = "flashcard-back";
 
-    display_question.innerHTML = text.question;
+    content_question.innerHTML = text.question;
     display_answer.innerHTML = text.answer;
-    body_div.appendChild(display_question);
-    body_div.appendChild(header);
-    body_div.appendChild(display_answer);
+    answer_question.innerHTML = text.question;
+
+    content_div.appendChild(content_question);
+
+    answer_div.appendChild(answer_question);
+    answer_div.appendChild(header);
+    answer_div.appendChild(display_answer);
+
+    body_div.appendChild(content_div);
+    body_div.appendChild(answer_div);
 
     master_div.appendChild(body_div);
 
@@ -40,11 +60,6 @@ function addFlashCardDiv(text) {
     row_div.appendChild(column_div);
 
     article.appendChild(row_div);
-
-    console.log("Question:");
-    console.log(text.question);
-    console.log("Answer:");
-    console.log(text.answer);
 }
 
 function addFlashCards() {
