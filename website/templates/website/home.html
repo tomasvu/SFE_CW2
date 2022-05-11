@@ -6,14 +6,27 @@
             <h1>Essay Game</h1>
         </div>
     </article>
-    <article class="media content-section">
-        <img class="rounded-circle article-img" src="{% static 'blog/images/Andy-Unger-154.jpg' %}">
-        <div class="media-body">
-            <div class="article-metadata">
-                <strong class="mr-2">Andy Unger <small class="text-muted">Head of Law Department of LSBU</small></strong>
-            </div>
-            <h2>Welcome to Essay Game</h2>
-            <p>Hello, I am Professor Andy Unger and I will take you on a learning trip you shall never forget</p>
+    <img class="rounded-circle article-img" src="{% static 'blog/images/Andy-Unger-154.jpg' %}">
+    <div class="media-body">
+        <div class="article-metadata">
+            <strong class="mr-2">Andy Unger <small class="text-muted">Head of Law Department of
+                LSBU</small></strong>
         </div>
-    </article>
+        <h2>Welcome to Essay Game</h2>
+        <p>
+            Hello, I am Professor Andy Unger and I would like you to introduce you to Essay Game.
+            This game consists of a multiple choice questions, where you get an example of a case study
+            and you are able to choose between different starters for an essay. Depending on your answer,
+            you will be able to get your feedback if it was a good choice or not. Are you ready to get started?
+        </p>
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <a href="/multiplechoice">
+                        <button class="btn btn-outline-info">Start the Game</button>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
 {% endblock content %}
