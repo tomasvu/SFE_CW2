@@ -1,4 +1,19 @@
 {% extends "website/base.html" %}
+{% load static %}
 {% block content %}
-    <h1>Home Page</h1>
+    <article class="media content-section">
+        <div>
+            <h1>Essay Game</h1>
+        </div>
+    </article>
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{% static 'blog/images/Andy-Unger-154.jpg' %}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <strong class="mr-2">Andy Unger <small class="text-muted">Head of Law Department of LSBU</small></strong>
+            </div>
+            <h2>Welcome to Essay Game</h2>
+            <p>Hello, I am Professor Andy Unger and I will take you on a learning trip you shall never forget</p>
+        </div>
+    </article>
 {% endblock content %}
