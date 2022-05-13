@@ -23,5 +23,9 @@ def home(request):
     return render(request, 'website/home.html', context)
 
 
-def rules(request):
-    return render(request, 'website/rules.html', {'title': 'Rules'})
+def flashcards(request):
+    return render(request, 'website/flashcards.html', {'title': 'Flashcards'})
+
+
+def multiplechoice(request):
+    return render(request, 'website/multiplechoice.html', {'title': 'Multiple Choice'})
