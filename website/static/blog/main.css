@@ -133,3 +133,12 @@ a.article-title:hover {
   border-radius: 8px;
   transform: rotateY(180deg);
 }
+
+.modified-link {
+  color: #333333!important;
+}
+
+.modified-link:hover {
+  color: cornflowerblue!important;
+  text-underline: none!important;
+}

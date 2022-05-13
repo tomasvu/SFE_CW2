@@ -1,9 +1,23 @@
 {% extends "website/base.html" %}
 {% block content %}
-    <article class="media content-section">
-        <h1>Multiple Choice Game</h1>
+    <article class="media content-section justify-content-center">
+        <h4>Physician Assisted Suicide Essay Builder - Fill The Gaps</h4>
     </article>
-    <article id="multiplechoice-article" class="media content-section">
-
+    <article class="media content-section justify-content-center">
+        <div class="card" style="border: none">
+            <div class="card-body" style="text-align: center">
+                <h5 id="section-title" class="card-title">Introduction</h5>
+                <p id="essay-part" hidden>1</p>
+                <p id="essay" class="card-text">At present, it is a criminal offence under S2 of the Suicide Act, 1961 to assist someone in committing suicide, even though committing suicide itself is no longer an offence as a result of S1 of the Suicide Act 1961. This applies to doctors as much as anyone else and it doesn’t matter if they act from the highest motives of compassion, they are still guilty of an offence.</p>
+                <hr id="essay-divider">
+                <h6 id="questions-header" class="card-subtitle mb-2 text-muted" style="padding-top: 15px">Choose Options</h6>
+                <ol id="questions-list" style="list-style-position: inside">
+                    <li style="padding-bottom: 10px"><a id="choice-1" class="modified-link" href="#" onclick="selected_answer = 1;checkSelection()">In this essay I will argue the law is messed up.</a></li>
+                    <li style="padding-bottom: 10px"><a id="choice-2" class="modified-link" href="#" onclick="selected_answer = 2;checkSelection()">In this essay, I will argue that the law should be reformed to allow physician assisted suicide, subject to appropriate safeguards.</a></li>
+                    <li style="padding-bottom: 10px"><a id="choice-3" class="modified-link" href="#" onclick="selected_answer = 3;checkSelection()">In this essay, I will argue the law is completely wrong.</a></li>
+                    <li><a id="choice-4" class="modified-link" href="#" onclick="selected_answer = 4;checkSelection()">In this essay, I argue that euthanasia should be legalised.</a></li>
+                </ol>
+            </div>
+        </div>
     </article>
 {% endblock content %}

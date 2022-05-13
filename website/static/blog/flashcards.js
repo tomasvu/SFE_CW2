@@ -3,7 +3,32 @@ const questions = [
     ["What should be included in the introduction?", "Topic, background and plan."],
     ["How should the main body of the essay be written?", "Providing clear and focused sentences and using ideas from literature to support your main points."],
     ["What should the conclusion include?", "Include the most relevant and important issues concerning the topic."],
-    ["Before starting the essay, you should make sure that?", "You have fully understood the question and have sufficient research for the essay."]]
+    ["Before starting the essay, you should make sure that?", "You have fully understood the question and have sufficient research for the essay."],
+    ["If you are devising your own essay title it should not be?", "A broad title not focusing directly on the topic."],
+    ["What three types of keywords have to be included in an essay title?", "Directive, topic and limiting words."],
+    ["Before you begin researching what must you set first?", "Realistic goals for how much material and information you need."],
+    ["If you have multiple lines of inquiry which ones, should you include?", "Only include the lines of inquiry you want to focus on in your essay."],
+    ["When reading law essays and books what should you do?", "Create a vocabulary bank that you can use in future essays."],
+    ["When should you start planning and writing your essay?", "You should aim to start the essay as soon as you receive the question."],
+    ["Should you begin the essay if you do not fully understand the question?", "No, you should fully understand the question before you begin writing."],
+    ["Where should the thesis be included?", "The thesis should be included in the introduction."],
+    ["Should counter arguments be presented in their best light?", "Yes, as this will show a broad understanding of the topic."],
+    ["Is presentation important?", "Presentation of an essay is very important and marks can be lost due to bad presentation."],
+    ["Is legal jargon always the best vocabulary to use?", "Being sophisticated is great however you should stick to the point and not use 5 words where 2 would have sufficed."],
+    ["Should irrelevant laws and arguments be included.", "No as a good essay only includes and focuses on relevant laws and arguments."],
+    ["Should the wider context of the law be demonstrated?", "Yes, as this will show a depth in the knowledge surrounding the law."],
+    ["Should casual language such as “I don’t think he is right” be used?", "No, as the argument sounds unconvincing and therefore is weakened by the language used."],
+    ["What are three types of legal essay questions?", "Legal theory, Legal reform and Legal History."],
+    ["What three essay structures can be used to write a good essay?", "The five-paragraph essay, The ‘French Method’ and the historical overview."],
+    ["Should you show instead of telling?", "If you are able to use examples or use stories in your essay to support your point you should include them."],
+    ["If you have not been given instructions on how to present your essay how should you present it?", "Font size 12 in a regular font with 1.5 line spacing and 25mm margins at the top and bottom."],
+    ["Should you be creative in your essay?", "Yes, you need to think creatively and apply your legal knowledge to the question you are answering."],
+    ["If you are using jargon, should you explain it?", "Yes, as the reader may not understand what some of the terms mean."],
+    ["During research you should?", "Write lists of questions about what you are reading and answer them."],
+    ["What will a good essay structure enable you to do?", "Communicate your ideas fluently and efficiently."],
+    ["What is the most useful planning technique?", "Mind maps."],
+    ["Should every claim be supported with an appropriate reference?", "Yes, every claim you make should be supported with appropriately referenced citations."],
+    ["Is simple language sometimes the best to use?", "Most of the time simple and precise words can be used easily to express what you mean."]]
 
 function addFlashCardDiv(text) {
     const article = document.getElementById("flashcard-article");
